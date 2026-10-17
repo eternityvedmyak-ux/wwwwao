@@ -1,0 +1,168 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
+
+body {
+    font-size: 24px;
+    margin: 0;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'MuseoSansCyrl-300', sans-serif;
+    font-weight: 300;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.qiwi {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color .1s linear;
+}
+
+.qiwi:hover {
+    background-color: #0085fe;
+}
+
+.qiwi_img {
+    margin: 45px auto 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.qiwi_text {
+    font-family: 'MuseoSansCyrl-700', sans-serif;
+    font-weight: 700;
+    margin: 135px auto 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: color .1s linear;
+}
+
+.qiwi:hover .qiwi_img path{
+    fill: white;
+}
+
+.qiwi:hover .qiwi_text {
+    color: white;
+}
+
+.unitpay {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color .1s linear;
+}
+
+.unitpay:hover {
+    background-color: #0085fe;
+}
+
+.unitpay_text {
+    font-family: 'MuseoSansCyrl-700', sans-serif;
+    font-weight: 700;
+    margin: 135px auto 0;
+    position: absolute;
+    transition: color .1s linear;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+}
+
+.unitpay_img {
+    margin: 45px auto 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+	fill: black;
+}
+
+.unitpay:hover .unitpay_img path{
+    fill: white;
+    stroke: white;
+}
+
+.unitpay:hover .unitpay_text {
+    color: white;
+}
+
+.enot {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color .1s linear;
+}
+
+.enot:hover {
+    background-color: #0085fe;
+}
+
+.enot_text {
+    font-family: 'MuseoSansCyrl-700', sans-serif;
+    font-weight: 700;
+    margin: 135px auto 0;
+    position: absolute;
+    transition: color .1s linear;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+}
+
+.enot_img {
+    margin: 45px auto 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+	fill: black;
+}
+
+.enot:hover .enot_img path{
+    fill: white;
+    stroke: white;
+}
+
+.enot:hover .enot_text {
+    color: white;
+}
+
+/* Mob.Adaptation */
+@media screen and (max-width: 980px) {
+    .selector {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0;
+        grid-row-gap: 15px;
+    }
+}
